@@ -15,6 +15,7 @@ class _AppBarDemoState extends State<AppBarDemo> {
       appBar: AppBar(
         centerTitle: true,
         title: Text("Welcome to Flutter"),
+        elevation: 4.0,
         actions: [
           IconButton(
               onPressed: () {
@@ -23,13 +24,29 @@ class _AppBarDemoState extends State<AppBarDemo> {
                   print('$count');
                 });
               },
-              icon: Icon(Icons.add_alert))
+              icon: Icon(Icons.add_alert)),
+          IconButton(
+              onPressed: () {
+                setState(() {
+                  count = count - 1;
+                  print('$count');
+                });
+              },
+              icon: Icon(Icons.delete_forever_sharp)),
+          IconButton(
+              onPressed: () {
+                setState(() {
+                  count = 0;
+                  print('$count');
+                });
+              },
+              icon: Icon(Icons.ac_unit))
         ],
       ),
       body: Center(
         child: Text(
-          "You have pressed the button $count times.",
-          style: TextStyle(fontSize: 20.0, color: Colors.purple),
+          "$count",
+          style: TextStyle(fontSize: 90.0, color: Colors.purple),
         ),
       ),
     );
