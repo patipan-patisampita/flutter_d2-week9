@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'appbar_demo.dart';
+import 'title_demo.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
@@ -10,7 +10,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter App Development',
       debugShowCheckedModeBanner: false,
-      home: const AppBarDemo(),
+      home: const TitleDemo(),
       theme: ThemeData(primarySwatch: Colors.purple),
     );
   }
