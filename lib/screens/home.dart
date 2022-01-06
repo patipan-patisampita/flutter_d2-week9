@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
-import 'scaffold_demo.dart';
+import 'floataction_demo.dart';
+
 
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
@@ -10,7 +11,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter App Development',
       debugShowCheckedModeBanner: false,
-      home: const ScaffoldDemo(),
+      home: const FloatActionDemo(),
       theme: ThemeData(primarySwatch: Colors.purple),
     );
   }
