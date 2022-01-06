@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'title_demo.dart';
+import 'automatically_imply_lead.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
@@ -10,7 +10,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter App Development',
       debugShowCheckedModeBanner: false,
-      home: const TitleDemo(),
+      home: const AutomaticImplyLead(),
       theme: ThemeData(primarySwatch: Colors.purple),
     );
   }
