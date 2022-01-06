@@ -29,6 +29,11 @@ class _FloatActionDemo extends State<FloatActionDemo> {
         tooltip: 'เพิ่มค่า',
         child: Icon(Icons.add),
       ),
+      bottomNavigationBar: BottomAppBar(
+        shape: CircularNotchedRectangle(),
+        child: Container(height: 50.0,),
+      ),
+      floatingActionButtonLocation: FloatingActionButtonLocation.startDocked
     );
   }
 }
